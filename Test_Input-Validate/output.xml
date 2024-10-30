@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-30T10:01:32.303515" rpa="false" schemaversion="5">
+<suite id="s1" name="Input-Validate" source="D:\automated\test_input-Validate\input-validate.robot">
+<test id="s1-t1" name="TC-001 Validate Input Form - All Required Fields" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:32.507346" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/input-form-demo'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-30T10:01:32.507074" elapsed="2.755353"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-30T10:01:35.263005" elapsed="0.051540"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:35.315736" level="INFO">Typing text 'Test User' into text field 'id=name'.</msg>
+<arg>id=name</arg>
+<arg>Test User</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:35.315099" elapsed="0.176546"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:35.492423" level="INFO">Typing text 'testuser@example.com' into text field 'id=inputEmail4'.</msg>
+<arg>id=inputEmail4</arg>
+<arg>testuser@example.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:35.492145" elapsed="0.087278"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:35.580061" level="INFO">Typing text 'Pass1234' into text field 'id=inputPassword4'.</msg>
+<arg>id=inputPassword4</arg>
+<arg>Pass1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:35.579759" elapsed="0.089128"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:35.669708" level="INFO">Typing text 'Test Company' into text field 'id=company'.</msg>
+<arg>id=company</arg>
+<arg>Test Company</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:35.669399" elapsed="0.098572"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:35.768640" level="INFO">Typing text 'www.test.com' into text field 'id=websitename'.</msg>
+<arg>id=websitename</arg>
+<arg>www.test.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:35.768345" elapsed="0.124213"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:35.893286" level="INFO">Selecting options from selection list 'xpath=//*[@id="seleniumform"]/div[3]/div[1]/select' by value TH.</msg>
+<arg>xpath=//*[@id="seleniumform"]/div[3]/div[1]/select</arg>
+<arg>TH</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2024-10-30T10:01:35.892982" elapsed="0.076214"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:35.969967" level="INFO">Typing text 'Test City' into text field 'id=inputCity'.</msg>
+<arg>id=inputCity</arg>
+<arg>Test City</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:35.969701" elapsed="0.077190"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:36.047646" level="INFO">Typing text '123 Test St' into text field 'id=inputAddress1'.</msg>
+<arg>id=inputAddress1</arg>
+<arg>123 Test St</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:36.047433" elapsed="0.155757"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:36.203854" level="INFO">Typing text '321 Test St' into text field 'id=inputAddress2'.</msg>
+<arg>id=inputAddress2</arg>
+<arg>321 Test St</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:36.203553" elapsed="0.301127"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:36.505285" level="INFO">Typing text 'Test State' into text field 'id=inputState'.</msg>
+<arg>id=inputState</arg>
+<arg>Test State</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:36.505023" elapsed="0.178595"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:36.684266" level="INFO">Typing text '12345' into text field 'id=inputZip'.</msg>
+<arg>id=inputZip</arg>
+<arg>12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:36.684005" elapsed="0.079097"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:36.763963" level="INFO">Clicking button 'xpath=//*[@id="seleniumform"]/div[6]/button'.</msg>
+<arg>xpath=//*[@id="seleniumform"]/div[6]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:36.763592" elapsed="0.291446"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:37.166375" level="INFO">${message} = Thanks for contacting us, we will get back to you shortly.</msg>
+<var>${message}</var>
+<arg>xpath=//*[@id="__next"]/div/section[2]/div/div/div/div/p</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:37.057737" elapsed="0.108697"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${message}</arg>
+<arg>Thanks for contacting us, we will get back to you shortly.</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-10-30T10:01:37.166805" elapsed="0.000214"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-30T10:01:37.167204" elapsed="2.258003"/>
+</kw>
+<doc>ตรวจสอบการทำงานของฟอร์มเมื่อมีการกรอกข้อมูลในฟิลด์ทั้งหมด</doc>
+<status status="PASS" start="2024-10-30T10:01:32.504973" elapsed="6.922502"/>
+</test>
+<test id="s1-t2" name="TC-002 Validate Input Form - Missing Required Fields" line="29">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:39.437449" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/input-form-demo'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-30T10:01:39.436566" elapsed="2.815250"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-30T10:01:42.252380" elapsed="0.036959"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:42.289986" level="INFO">Clicking button 'xpath=//*[@id="seleniumform"]/div[6]/button'.</msg>
+<arg>xpath=//*[@id="seleniumform"]/div[6]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:42.289710" elapsed="0.166414"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-30T10:01:42.456565" elapsed="2.197630"/>
+</kw>
+<doc>ตรวจสอบการแจ้งเตือนเมื่อไม่กรอกข้อมูลในฟิลด์ที่จำเป็น</doc>
+<status status="PASS" start="2024-10-30T10:01:39.430557" elapsed="5.224786"/>
+</test>
+<test id="s1-t3" name="TC-003 Validate Email Field - Invalid Email Format" line="38">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:44.665629" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/input-form-demo'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-30T10:01:44.664782" elapsed="2.680008"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-30T10:01:47.345295" elapsed="0.036692"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:47.382503" level="INFO">Typing text 'invalid-email-format' into text field 'id=inputEmail4'.</msg>
+<arg>id=inputEmail4</arg>
+<arg>invalid-email-format</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:47.382300" elapsed="0.211993"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:01:47.595482" level="INFO">Clicking button 'xpath=//*[@id="seleniumform"]/div[6]/button'.</msg>
+<arg>xpath=//*[@id="seleniumform"]/div[6]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:01:47.595026" elapsed="0.076533"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-30T10:01:47.672042" elapsed="2.174097"/>
+</kw>
+<doc>ตรวจสอบการแจ้งเตือนเมื่อกรอกอีเมลในรูปแบบที่ไม่ถูกต้อง</doc>
+<status status="PASS" start="2024-10-30T10:01:44.658726" elapsed="5.188522"/>
+</test>
+<status status="PASS" start="2024-10-30T10:01:32.305095" elapsed="17.545846"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Input-Validate">Input-Validate</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

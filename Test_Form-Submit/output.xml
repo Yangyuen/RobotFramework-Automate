@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-30T10:31:42.653325" rpa="false" schemaversion="5">
+<suite id="s1" name="Form-Submit" source="D:\automated\test_form-submit\form-submit.robot">
+<test id="s1-t1" name="TC-001 Form Submit Success" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:31:42.862035" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/ajax-form-submit-demo'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-30T10:31:42.861749" elapsed="2.910075"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-30T10:31:45.772453" elapsed="0.050515"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:31:45.824141" level="INFO">Typing text 'test1234' into text field 'id=title'.</msg>
+<arg>id=title</arg>
+<arg>test1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:31:45.823497" elapsed="0.195888"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:31:46.020320" level="INFO">Typing text 'Test12345677899' into text field 'id=description'.</msg>
+<arg>id=description</arg>
+<arg>Test12345677899</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:31:46.019921" elapsed="0.080683"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:31:46.101341" level="INFO">Clicking button 'id=btn-submit'.</msg>
+<arg>id=btn-submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:31:46.101024" elapsed="1.153643"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-30T10:31:47.255486" elapsed="2.197635"/>
+</kw>
+<doc>ทดสอบการกรอกและส่งข้อมูลในฟอร์มที่ถูกต้อง</doc>
+<status status="PASS" start="2024-10-30T10:31:42.859958" elapsed="6.594389"/>
+</test>
+<test id="s1-t2" name="TC-002 Empty Form Submit" line="21">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:31:49.462466" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/ajax-form-submit-demo'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-30T10:31:49.461589" elapsed="2.602419"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-30T10:31:52.064393" elapsed="0.045313"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-30T10:31:52.111422" level="INFO">Clicking button 'id=btn-submit'.</msg>
+<arg>id=btn-submit</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-30T10:31:52.110744" elapsed="0.138701"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-30T10:31:52.249912" elapsed="2.206714"/>
+</kw>
+<doc>ทดสอบการกรอกและส่งข้อมูลในฟอร์มที่ถูกต้อง</doc>
+<status status="PASS" start="2024-10-30T10:31:49.456761" elapsed="5.001032"/>
+</test>
+<status status="PASS" start="2024-10-30T10:31:42.655006" elapsed="11.806301"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Form-Submit">Form-Submit</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
