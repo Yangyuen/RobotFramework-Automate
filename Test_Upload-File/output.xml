@@ -1,53 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-31T17:23:28.613284" rpa="false" schemaversion="5">
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-31T17:48:05.222798" rpa="false" schemaversion="5">
 <suite id="s1" name="Upload-File" source="D:\learning-robotframework\test_upload-file\upload-file.robot">
 <test id="s1-t1" name="TC-001 Verify Allowed File Upload" line="10">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-31T17:23:28.813216" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/upload-file-demo'.</msg>
+<msg time="2024-10-31T17:48:05.428791" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/upload-file-demo'.</msg>
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-31T17:23:28.812924" elapsed="2.575586"/>
+<status status="PASS" start="2024-10-31T17:48:05.428458" elapsed="2.709037"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-10-31T17:23:31.389064" elapsed="0.045723"/>
+<status status="PASS" start="2024-10-31T17:48:08.138157" elapsed="0.045384"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${file}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-10-31T17:23:31.435936" elapsed="0.037180"/>
+<status status="PASS" start="2024-10-31T17:48:08.184225" elapsed="0.040063"/>
 </kw>
 <kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2024-10-31T17:23:31.474307" level="INFO">Sending C:\Users\Yungyuen.K\Downloads\1toall.pdf to browser.</msg>
+<msg time="2024-10-31T17:48:08.225697" level="INFO">Sending C:\Users\Yungyuen.K\Downloads\1toall.pdf to browser.</msg>
 <arg>${file}</arg>
 <arg>${allowed_file}</arg>
 <doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2024-10-31T17:23:31.473699" elapsed="0.047817"/>
+<status status="PASS" start="2024-10-31T17:48:08.224991" elapsed="0.060333"/>
 </kw>
 <kw name="Wait Until Element Contains" owner="SeleniumLibrary">
 <arg>xpath=//*[@id="error"]</arg>
 <arg>File Successfully Uploaded</arg>
 <doc>Waits until the element ``locator`` contains ``text``.</doc>
-<status status="PASS" start="2024-10-31T17:23:31.523394" elapsed="0.063229"/>
+<status status="PASS" start="2024-10-31T17:48:08.285945" elapsed="0.043599"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-10-31T17:23:31.587027" elapsed="2.175269"/>
+<status status="PASS" start="2024-10-31T17:48:08.330085" elapsed="2.219366"/>
 </kw>
 <doc>ทดสอบการอัปโหลดไฟล์ที่ได้รับอนุญาต (pdf, png, jpeg, jpg)</doc>
-<status status="PASS" start="2024-10-31T17:23:28.811204" elapsed="4.952218"/>
+<status status="PASS" start="2024-10-31T17:48:05.426640" elapsed="5.123942"/>
 </test>
-<status status="PASS" start="2024-10-31T17:23:28.614677" elapsed="5.152498"/>
+<test id="s1-t2" name="TC-002 Verify Disallowed File Upload" line="25">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-31T17:48:10.561754" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/upload-file-demo'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-31T17:48:10.560831" elapsed="2.472100"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-31T17:48:13.033408" elapsed="0.051657"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${file}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-10-31T17:48:13.086120" elapsed="0.037371"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-10-31T17:48:13.124446" level="INFO">Sending C:\Users\Yungyuen.K\Downloads\travelling.xls to browser.</msg>
+<arg>${file}</arg>
+<arg>${disallowed_file}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-10-31T17:48:13.123978" elapsed="0.058990"/>
+</kw>
+<kw name="Wait Until Element Contains" owner="SeleniumLibrary">
+<arg>xpath=//*[@id="error"]</arg>
+<arg>File type should be pdf, png, jpeg or jpg</arg>
+<doc>Waits until the element ``locator`` contains ``text``.</doc>
+<status status="PASS" start="2024-10-31T17:48:13.183962" elapsed="0.039636"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-31T17:48:13.224084" elapsed="2.187211"/>
+</kw>
+<doc>ทดสอบการอัปโหลดไฟล์ที่ไม่ได้รับอนุญาต (เช่น exe, xls, word)</doc>
+<status status="PASS" start="2024-10-31T17:48:10.555098" elapsed="4.857379"/>
+</test>
+<status status="PASS" start="2024-10-31T17:48:05.224215" elapsed="10.193088"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Upload-File">Upload-File</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="Upload-File">Upload-File</stat>
 </suite>
 </statistics>
 <errors>
