@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.13.0 on win32)" generated="2024-10-31T11:02:50.848578" rpa="false" schemaversion="5">
+<suite id="s1" name="Radio-Button" source="D:\learning-robotframework\test_radio-button\radio-button.robot">
+<test id="s1-t1" name="TC-001 Click on Radio Button 'Female'" line="13">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:02:51.087582" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/radiobutton-demo'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-31T11:02:51.086843" elapsed="3.300118"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-31T11:02:54.387476" elapsed="0.042602"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:02:54.433332" level="INFO">Clicking element 'xpath://*[@id="__next"]/div/section[2]/div/div/div/div[1]/div/label[2]/input'.</msg>
+<arg>${FEMALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-31T11:02:54.431724" elapsed="0.108171"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:02:54.540920" level="INFO">Clicking button 'id=buttoncheck'.</msg>
+<arg>id=buttoncheck</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-31T11:02:54.540534" elapsed="0.082779"/>
+</kw>
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:02:54.638567" level="INFO">Element 'xpath://*[@id="__next"]/div/section[2]/div/div/div/div[1]/div/label[2]/input' attribute 'checked' contains value 'true'.</msg>
+<arg>${FEMALE}</arg>
+<arg>checked</arg>
+<arg>true</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="PASS" start="2024-10-31T11:02:54.623719" elapsed="0.014976"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:02:54.669772" level="INFO">${element_text} = Radio button 'Female' is checked</msg>
+<var>${element_text}</var>
+<arg>${Result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-31T11:02:54.639080" elapsed="0.030757"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${element_text}</arg>
+<arg>Radio button 'Female' is checked</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-10-31T11:02:54.670405" elapsed="0.000400"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-31T11:02:55.671912" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-31T11:02:54.671137" elapsed="1.000918"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-31T11:02:55.672578" elapsed="2.148967"/>
+</kw>
+<doc>ทดสอบการ Click Radio Button Female</doc>
+<status status="PASS" start="2024-10-31T11:02:51.083757" elapsed="6.739845"/>
+</test>
+<test id="s1-t2" name="TC-002 Click on Radio Button 'Male'" line="29">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:02:57.831714" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/radiobutton-demo'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-31T11:02:57.830804" elapsed="2.699377"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-31T11:03:00.530599" elapsed="0.044641"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:03:00.577038" level="INFO">Clicking element 'xpath://*[@id="__next"]/div/section[2]/div/div/div/div[1]/div/label[1]/input'.</msg>
+<arg>${MALE}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-31T11:03:00.576335" elapsed="0.102901"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:03:00.680126" level="INFO">Clicking button 'id=buttoncheck'.</msg>
+<arg>id=buttoncheck</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-31T11:03:00.679714" elapsed="0.076766"/>
+</kw>
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:03:00.775522" level="INFO">Element 'xpath://*[@id="__next"]/div/section[2]/div/div/div/div[1]/div/label[1]/input' attribute 'checked' contains value 'true'.</msg>
+<arg>${MALE}</arg>
+<arg>checked</arg>
+<arg>true</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="PASS" start="2024-10-31T11:03:00.756877" elapsed="0.018760"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:03:00.806886" level="INFO">${element_text} = Radio button 'Male' is checked</msg>
+<var>${element_text}</var>
+<arg>${Result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-31T11:03:00.775978" elapsed="0.030971"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${element_text}</arg>
+<arg>Radio button 'Male' is checked</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-10-31T11:03:00.807439" elapsed="0.000261"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-31T11:03:01.808150" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-31T11:03:00.807914" elapsed="1.000375"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-31T11:03:01.808668" elapsed="2.153288"/>
+</kw>
+<doc>ทดสอบการ Click Radio Button Male</doc>
+<status status="PASS" start="2024-10-31T11:02:57.826850" elapsed="6.136551"/>
+</test>
+<test id="s1-t3" name="TC-003 Empty Radio Button" line="46">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:03:03.967215" level="INFO">Opening browser 'Chrome' to base url 'https://www.lambdatest.com/selenium-playground/radiobutton-demo'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-31T11:03:03.966611" elapsed="2.573446"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-31T11:03:06.540955" elapsed="0.059558"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:03:06.607187" level="INFO">Clicking button 'id=buttoncheck'.</msg>
+<arg>id=buttoncheck</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-31T11:03:06.605715" elapsed="0.112852"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-10-31T11:03:06.749460" level="INFO">${element_text} = Radio button is Not checked</msg>
+<var>${element_text}</var>
+<arg>${Result}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-31T11:03:06.719040" elapsed="0.030484"/>
+</kw>
+<kw name="Should Contain" owner="BuiltIn">
+<arg>${element_text}</arg>
+<arg>Radio button is Not checked</arg>
+<doc>Fails if ``container`` does not contain ``item`` one or more times.</doc>
+<status status="PASS" start="2024-10-31T11:03:06.749919" elapsed="0.000295"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-31T11:03:07.751544" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-31T11:03:06.750552" elapsed="1.001373"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-31T11:03:07.752448" elapsed="2.136664"/>
+</kw>
+<doc>Empty Radio Button</doc>
+<status status="PASS" start="2024-10-31T11:03:03.965457" elapsed="5.924310"/>
+</test>
+<status status="PASS" start="2024-10-31T11:02:50.850452" elapsed="19.041565"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Radio-Button">Radio-Button</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
